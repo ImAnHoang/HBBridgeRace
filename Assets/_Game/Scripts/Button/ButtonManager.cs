@@ -31,6 +31,7 @@ public class ButtonManager : MonoBehaviour
         Reset.SetActive(false);
         Nexts.SetActive(false);
         playerMove = FindObjectOfType<PlayerMovement>();
+        JoyStick.SetActive(false);
     }
     public void StartGame()
     {

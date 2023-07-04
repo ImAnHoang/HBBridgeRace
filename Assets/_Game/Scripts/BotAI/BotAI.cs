@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class BotAI : MonoBehaviour
 {
+    
     [SerializeField] int targetColor;
 
 
@@ -32,6 +33,8 @@ public class BotAI : MonoBehaviour
 
     int count_stair = 0;
 
+    private float SpeedBot; 
+    
     [SerializeField] private GameObject[] _allTargetsBridge;
     [SerializeField] private float distanceToClosestBridge;
     [SerializeField] private float distanceToBridge;
@@ -78,10 +81,12 @@ public class BotAI : MonoBehaviour
 
     private void OnInit()
     {
+        SpeedBot = (float)5.5;
         playerController = GetComponent<PlayerController>();
         animator = GetComponent<Animator>();
         NavMeshAgent = GetComponent<NavMeshAgent>();
         colorType = (ColorType)targetColor;
+        NavMeshAgent.speed = SpeedBot;
     }
     private void OnTriggerEnter(Collider other)
     {
