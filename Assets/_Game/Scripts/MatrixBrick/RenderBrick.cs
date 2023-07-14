@@ -33,7 +33,8 @@ public class RenderBrick : MonoBehaviour
 
     private void CreateBrick()
     {
-        tmp_brick = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/_Game/Prefabs/BrickDefault.prefab");
+        //tmp_brick = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/_Game/Prefabs/BrickDefault.prefab");
+        tmp_brick = Resources.Load<GameObject>("BrickDefault");
         int red_brick = 0;
         int blue_brick = 0;
         int green_brick = 0;

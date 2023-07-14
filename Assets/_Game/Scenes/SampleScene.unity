@@ -5064,7 +5064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1482952494}
   smoothSpeed: 2500
-  offset: {x: 0, y: 50, z: -90}
+  offset: {x: 0, y: 50, z: -100}
 --- !u!1001 &967772440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9309,7 +9309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a60e233b9d6bf439d026052e7c6816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 900
+  speed: 800
   variableJoystick: {fileID: 348708920}
   layerGround:
     serializedVersion: 2
@@ -9643,7 +9643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8135886327475159576, guid: 56fae09712773584fb63896d473a98ee, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135886327475159579, guid: 56fae09712773584fb63896d473a98ee, type: 3}
       propertyPath: m_SizeDelta.x
@@ -9663,7 +9663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8135886327784587630, guid: 56fae09712773584fb63896d473a98ee, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}

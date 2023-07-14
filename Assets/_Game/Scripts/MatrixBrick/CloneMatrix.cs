@@ -33,7 +33,8 @@ public class CloneMatrix : MonoBehaviour
 
     private void CreateBrick()
     {
-        tmp_brick = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/_Game/Prefabs/BrickDefault.prefab");
+        //tmp_brick = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/_Game/Prefabs/BrickDefault.prefab");
+        tmp_brick = Resources.Load<GameObject>("BrickDefault");
         int red_brick = 0;
         int blue_brick = 0;
         int green_brick = 0;
@@ -54,7 +55,7 @@ public class CloneMatrix : MonoBehaviour
             int k = Random.Range(0, n + 1);
             Vector2Int temp = positions[k];
             positions[k] = positions[n];
-            positions[n] = temp;
+            positions[n] = temp; 
         }
 
         foreach (Vector2Int position in positions)

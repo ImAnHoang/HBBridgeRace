@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
     void Move()
     {
         Vector3 direction = Vector3.forward * variableJoystick.Vertical + Vector3.right * variableJoystick.Horizontal;
-        rb.velocity = direction * speed * Time.deltaTime;
+        rb.velocity = direction * speed * Time.fixedDeltaTime;
         transform.localRotation = Quaternion.LookRotation(direction * 5f);
     }
 
